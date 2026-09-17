@@ -4,6 +4,7 @@ import { getMemberSession } from "@/lib/guard";
 import { Header, Footer } from "./components";
 
 export const dynamic = "force-dynamic";
+// Force rebuild
 
 export default async function HomePage() {
   const [settings, topics] = await Promise.all([getSettings(), getTopics()]);
